@@ -14,10 +14,8 @@ I chose from the beginning to do it in Ruby, mainly because I did a few projects
 
 This night, I also decided which git workflow I will be using ([Git Feature branch Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow)).
 
-Most of the researches I made to find out how to make an API using Ruby, I ended up on articles about Rails, and sometimes about Sinatra or Grape. I have already made 2 projects using Rails, and I know that a lot of its features will not be useful, and as it is a whole framework, it can be heavy for this project. Sinatra is much more lightweight than Rails. I decided to go with Grape, it is specifically designed to create APIs.
-[https://github.com/ruby-grape/grape#what-is-grape](https://github.com/ruby-grape/grape#what-is-grape)
-
-
+Most of the researches I made to find out how to make an API using Ruby, I ended up on articles about Rails, and sometimes about Sinatra. I have already made 2 projects using Rails, and I know that a lot of its features will not be useful, and as it is a whole framework, it can be heavy for this project. So I decided to use Sinatra instead, because it is much more lightweight.
+[Sinatra's GitHub repository](https://github.com/sinatra/sinatra)
 
 
 
