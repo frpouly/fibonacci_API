@@ -33,6 +33,7 @@ It took quite a while, as I also had to deploy a Jenkins server on my machine, b
 
 I also wanted to add a trigger to automatically run the tests each time I would push or merge something into the branches main or dev, unfortunately, this could be done with github's webhooks, but to use it my Jenkins should be online, which is not the case at the moment.
 
+I spent some time to reorganize the project so to be more clear. I am using a controller to get the routes, and a model to calculate Fibonacci number.
 
-
+I also want to find a way to store Fibonacci numbers to retrieve them in an effective way, I will use an hash table first.
 
