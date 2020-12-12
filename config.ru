@@ -4,7 +4,7 @@ require 'bundler'
 
 Bundler.require
 
-require './server'
+require './app/controllers/FibonacciController'
 #\ -w -p 3000 --host 0.0.0.0 # Override default Rack port 9292
 
-run Fibonacci_Finder
+run FibonacciController
