@@ -15,6 +15,9 @@ class ServerTest < Test::Unit::TestCase
   end
 
   def test_it_gives_thefibonacci_number
+    get '/api/v1/fibonacci/0'
+    assert last_response.ok?
+    assert_equal last_response.body, { "value" => 0 }.to_json
     get '/api/v1/fibonacci/12'
     assert last_response.ok?
     assert_equal last_response.body, { "value" => 144 }.to_json
@@ -33,6 +36,8 @@ class ServerTest < Test::Unit::TestCase
     get '/api/v1/fibonacci/12cjhdks'
     assert_equal 400, last_response.status
     get '/api/v1/fibonacci/sjdh12'
+    assert_equal 400, last_response.status
+    get '/api/v1/fibonacci/-13274'
     assert_equal 400, last_response.status
   end
 end
