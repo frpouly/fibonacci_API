@@ -2,7 +2,7 @@
 
 I have one week to complete the project, at the moment I am writing those lines, we are the 11th of December and have until the 18th to send it.
 
-## Friday night
+## Friday
 
 The first thing I need to do is to create my GitHub repository. After that (and updated my Rubymine license), I began looking around the web to find more informations about Ruby APIs.
 I found a first interesting article : [https://www.synbioz.com/blog/tech/api-ruby-rails-gem-grape]().
@@ -18,6 +18,14 @@ Most of the researches I made to find out how to make an API using Ruby, I ended
 [Sinatra's GitHub repository](https://github.com/sinatra/sinatra)
 
 Finally this day I also created a new project on GitHub to decompose the project and have a good vision of the things to do.
+
+## Saturday
+
+I updated the API to return the number at the end of the Fibonacci sequence when the user asks the route '/api/v1/fibonacci/:number'.
+
+It is a very basic version, and it will be upgraded after.
+
+Afterthat, I will try to create a CI pipeline for my application [https://joachim8675309.medium.com/jenkins-ci-pipeline-with-ruby-62017469c7c9](https://joachim8675309.medium.com/jenkins-ci-pipeline-with-ruby-62017469c7c9)
 
 
 
