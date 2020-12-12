@@ -1,9 +1,9 @@
 pipeline {
-  agent { docker { image 'ruby:2.7.0' } }
+  agent { docker { image 'ruby:2.6.1' } }
   stages {
     stage('requirements') {
       steps {
-        sh 'gem install bundler -v 2.1.2'
+        sh 'gem install bundler -v 2.0.1'
       }
     }
     stage('build') {
@@ -13,8 +13,13 @@ pipeline {
     }
     stage('test') {
       steps {
-        sh 'rake'
-      }   
+        sh 'rake ci:all'
+      }
+      post {
+        always {
+          junit 'test/reports/TEST-AppTest.xml'
+        }
+      }
     }
   }
 }

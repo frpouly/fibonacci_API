@@ -27,5 +27,7 @@ It is a very basic version, and it will be upgraded after.
 
 Afterthat, I will try to create a CI pipeline for my application [https://joachim8675309.medium.com/jenkins-ci-pipeline-with-ruby-62017469c7c9](https://joachim8675309.medium.com/jenkins-ci-pipeline-with-ruby-62017469c7c9)
 
+It took quite a while, as I also had to deploy a Jenkins server on my machine.
+
 
 
