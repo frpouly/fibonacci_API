@@ -27,7 +27,12 @@ It is a very basic version, and it will be upgraded after.
 
 Afterthat, I will try to create a CI pipeline for my application [https://joachim8675309.medium.com/jenkins-ci-pipeline-with-ruby-62017469c7c9](https://joachim8675309.medium.com/jenkins-ci-pipeline-with-ruby-62017469c7c9)
 
-It took quite a while, as I also had to deploy a Jenkins server on my machine.
+It took quite a while, as I also had to deploy a Jenkins server on my machine, but at the end, my pipeline was working fine.
+
+![logbook_images/ci_pipeline.png](logbook_images/ci_pipeline.png)
+
+I also wanted to add a trigger to automatically run the tests each time I would push or merge something into the branches main or dev, unfortunately, this could be done with github's webhooks, but to use it my Jenkins should be online, which is not the case at the moment.
+
 
 
 
