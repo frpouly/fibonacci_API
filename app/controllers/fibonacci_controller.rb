@@ -12,18 +12,16 @@ def fibonacci(num)
   first_num
 end
 
-class Fibonacci_Finder < Sinatra::Base
+class FibonacciController < Sinatra::Base
   register Sinatra::MultiRoute
+
+  @@default_route = "/api/v1/fibonacci/"
 
   before do
     content_type 'application/json'
   end
 
-  get '/' do
-    "hello world".to_json
-  end
-
-  get '/api/v1/fibonacci/:number' do
+  get @@default_route + ":number" do
     fibonacci(Integer("#{params[:number]}")).to_json
   end
 end
