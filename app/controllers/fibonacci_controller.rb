@@ -19,11 +19,11 @@ class FibonacciController < Sinatra::Base
     if number < 0
       halt 400, "Number must be positive"
     end
-    if number > 1000
-      halt 400, "The result is too big to be computed"
+    if number > 100000
+      halt 400, "Number too big to be computed"
     end
     content_type 'application/json'
     result = FibonacciModel.new(number).fibonacci
-    { "value" => result }.to_json
+    { "value" => result.to_s }.to_json
   end
 end

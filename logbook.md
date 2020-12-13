@@ -37,3 +37,16 @@ I spent some time to reorganize the project so to be more clear. I am using a co
 
 I also want to find a way to store Fibonacci numbers to retrieve them in an effective way, I will use an hash table first.
 
+If n is superior to about 100, an Integer (BigNum) isn't enough to store the result, so it is parsed into an float. It can also be too big to be stored in a float, and therefore I have to limit the n at the beginning to 1000.
+
+# Sunday
+
+Because of the Ruby uses the Integers, I had to find another to store very large numbers, as fibonacci(1000) has for instance 209 digits. So I created the class HugeInteger to store huge integers.
+
+It is working like this : 
+* there is a table of integers to store the values
+* if the value can fit in an Integer, it needs only one index
+* if the value is too big for an Integer, new indexes are created. The first index is the "least significant number".
+
+I only had to overload the addition operator for this class as I am using only additions.
+I also overloaded the "to_s" method to write it correctly.
