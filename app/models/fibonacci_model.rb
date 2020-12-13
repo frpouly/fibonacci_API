@@ -2,13 +2,14 @@ require_relative './huge_integer'
 
 class FibonacciModel
 
+  attr :result
   @num
   @@hash = { 0 => HugeInteger.new(0), 1 => HugeInteger.new(1)}
   #@@hash = { 0 => 0, 1 => 1}
 
   def initialize(num)
     @num = num
-
+    @result = fibonacci
   end
 
   def fibonacci

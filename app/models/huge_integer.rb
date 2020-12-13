@@ -1,6 +1,6 @@
 class HugeInteger
   attr_accessor :value
-  @@MAX_SIZE_INDEX = 10000000000000000
+  @@MAX_SIZE_INDEX = 100000000000000000
 
   def initialize(value)
     if(value.is_a?(Integer))
