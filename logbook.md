@@ -50,3 +50,10 @@ It is working like this :
 
 I only had to overload the addition operator for this class as I am using only additions.
 I also overloaded the "to_s" method to write it correctly.
+
+Apparently, Ruby can deal with large numbers, as it is working perfectly well with the Inverted Fibonacci I wrote, so I will why it didn't work when I wanted to find the Fibonacci of a large number.
+
+Also, I found a very fast to calculate Fibonacci numbers [here](http://www.maths.surrey.ac.uk/hosted-sites/R.Knott/Fibonacci/fibFormula.html#section1.1)
+A method was proposed by Dijkstra back in 1978, and to compute Fibonacci(1000) it only uses 22 intermediate values.
+
+This new method works very well, now I can compute Fibonacci numbers up to 15 millions, while it was hard to go up to 100000 with the last one. However a lot of code I did is now useless.
