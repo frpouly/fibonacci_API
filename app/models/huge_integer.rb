@@ -1,3 +1,5 @@
+# Useless now, but it took a while to code so it stays here
+
 class HugeInteger
   attr_accessor :value
   @@MAX_SIZE_INDEX = 100000000000000000

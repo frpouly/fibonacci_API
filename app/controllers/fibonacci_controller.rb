@@ -20,7 +20,7 @@ class FibonacciController < Sinatra::Base
     if number < 0
       halt 400, "Number must be positive"
     end
-    if number > 100000
+    if number > 15000000
       halt 400, "Number is too big"
     end
     content_type 'application/json'
