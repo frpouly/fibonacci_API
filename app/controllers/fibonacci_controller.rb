@@ -3,9 +3,6 @@ require "sinatra/multi_route"
 require_relative '../models/fibonacci_model'
 require_relative '../models/inverted_fibonacci_model'
 
-set :port, 3000
-set :bin, '0.0.0.0'
-
 class FibonacciController < Sinatra::Base
   register Sinatra::MultiRoute
 

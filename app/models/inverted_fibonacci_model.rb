@@ -9,6 +9,6 @@ class InvertedFibonacciModel
   end
 
   def compute_inverted_fibonacci
-    @result = (Math.log(@num * Math.sqrt(5) + 1/2)/Math.log(@@PHI)).round()
+    @result = @num == 0 ? 0 : (Math.log(@num * Math.sqrt(5) + 1/2)/Math.log(@@PHI)).round()
   end
 end

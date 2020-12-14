@@ -57,3 +57,6 @@ Also, I found a very fast to calculate Fibonacci numbers [here](http://www.maths
 A method was proposed by Dijkstra back in 1978, and to compute Fibonacci(1000) it only uses 22 intermediate values.
 
 This new method works very well, now I can compute Fibonacci numbers up to 15 millions, while it was hard to go up to 100000 with the last one. However a lot of code I did is now useless.
+
+Finally, I added the tests for the inverted Fibonacci method. Added the tests was useful as I didn't that if I had 0 as input, a division by 0 was made.
+

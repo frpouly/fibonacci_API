@@ -2,20 +2,21 @@
 
 class HugeInteger
   attr_accessor :value
-  @@MAX_SIZE_INDEX = 100000000000000000
+  @@MAX_SIZE_INDEX = 10000000000000000
 
-  def initialize(value)
-    if(value.is_a?(Integer))
+  def initialize(val)
+    if(val.is_a?(Integer))
       @value = []
       i = 0
       loop do
-        @value[i] = value % @@MAX_SIZE_INDEX
-        value = value - @value[i]
+        @value[i] = val % @@MAX_SIZE_INDEX
+        val = val - @value[i]
+        val = val / @@MAX_SIZE_INDEX
         i += 1
-      break if value == 0
+      break if val == 0
       end
     else
-      @value = value
+      @value = val
     end
   end
 
