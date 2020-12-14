@@ -8,7 +8,7 @@ If you already have a Ruby environment and bundler gem, you can run the applicat
 
 ``` bash
 bunlde install
-rackup &
+rackup -p 3000 &
 ```
 
 Afterthat, you can access to the routes :
