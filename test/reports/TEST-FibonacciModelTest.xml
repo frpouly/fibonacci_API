@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="FibonacciModelTest" tests="3" time="0.00048091" failures="0" errors="0" skipped="0" assertions="15" timestamp="2020-12-15T13:54:25+01:00">
+  <testcase name="test_inverted_with_fibonacci" time="0.000149813" assertions="2">
+  </testcase>
+  <testcase name="test_it_gives_the_correct_fibonacci_number" time="9.3132e-05" assertions="7">
+  </testcase>
+  <testcase name="test_it_gives_the_correct_inverted_fibonacci_number" time="6.3926e-05" assertions="6">
+  </testcase>
+</testsuite>

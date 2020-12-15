@@ -1,11 +1,13 @@
+# frozen_string_literal: true
+
 require 'rake/testtask'
 require 'ci/reporter/rake/test_unit'
 
-task default: %i(test)
+task default: %i[test]
 task testunit: 'ci:setup:testunit'
 
 namespace :ci do
-  task :all => ['ci:setup:testunit', 'test']
+  task all: ['ci:setup:testunit', 'test']
 end
 
 Rake::TestTask.new do |t|
