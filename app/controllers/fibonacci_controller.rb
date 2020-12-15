@@ -44,4 +44,9 @@ class FibonacciController < Sinatra::Base
     content_type 'application/json'
     { "value" => InvertedFibonacciModel.new(number).result.to_s }.to_json
   end
+
+  error Sinatra::NotFound do
+    content_type 'text/plain'
+    [404, 'Not Found']
+  end
 end
