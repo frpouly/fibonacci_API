@@ -60,3 +60,9 @@ This new method works very well, now I can compute Fibonacci numbers up to 15 mi
 
 Finally, I added the tests for the inverted Fibonacci method. Added the tests was useful as I didn't that if I had 0 as input, a division by 0 was made.
 
+# Monday
+
+I added tests for my models, even though my test coverage might be high, I still need to work on those, I think they don't cover everything.
+
+I also wanted to create the user friendly web interface for the API.
+
