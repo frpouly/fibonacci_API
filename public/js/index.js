@@ -1,5 +1,5 @@
 window.addEventListener("load", function () {
-    function sendData() {
+    function sendData(end_path) {
         let XHR = new XMLHttpRequest();
 
         let FD = new FormData(form);
@@ -13,49 +13,25 @@ window.addEventListener("load", function () {
                 alert(`Please provide a valid number`);
             } else {
                 let json = JSON.parse(XHR.responseText);
-                document.getElementById("result_fibonacci").innerHTML = json.value
+                document.getElementById("result_" + end_path).innerHTML = json.value
             }
         });
 
-        XHR.open("GET", "/api/v1/fibonacci/" + document.getElementById("number_fibonacci").value);
+        XHR.open("GET", "/api/v1/" + end_path + "/" + document.getElementById("number_" + end_path).value);
         XHR.send();
     }
 
-    let form = document.getElementById("fibonacci");
+    let form_fibonacci = document.getElementById("fibonacci");
 
-    form.addEventListener("submit", function (event) {
+    form_fibonacci.addEventListener("submit", function (event) {
         event.preventDefault();
-        sendData();
+        sendData("fibonacci");
     });
-});
 
-window.addEventListener("load", function () {
-    function sendData() {
-        let XHR = new XMLHttpRequest();
+    let form_inverted_fibonacci = document.getElementById("inverted_fibonacci")
 
-        let FD = new FormData(form);
-
-        XHR.addEventListener("error", function(event) {
-            alert('Oups! Somethong went wrong.');
-        });
-
-        XHR.addEventListener("load", function(event) {
-            if (XHR.status != 200) { // analyze HTTP status of the response
-                alert(`Please provide a valid number`);
-            } else {
-                let json = JSON.parse(XHR.responseText);
-                document.getElementById("result_inverted_fibonacci").innerHTML = json.value
-            }
-        });
-
-        XHR.open("GET", "/api/v1/inverted_fibonacci/" + document.getElementById("number_inverted_fibonacci").value);
-        XHR.send();
-    }
-
-    let form = document.getElementById("inverted_fibonacci");
-
-    form.addEventListener("submit", function (event) {
+    form_fibonacci.addEventListener("submit", function (event) {
         event.preventDefault();
-        sendData();
+        sendData("inverted_fibonacci");
     });
 });
