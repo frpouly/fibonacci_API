@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="FibonacciControllerTest" tests="4" time="0.201687865" failures="0" errors="0" skipped="0" assertions="38" timestamp="2020-12-14T01:21:53+01:00">
-  <testcase name="test_if_400_is_thrown_for_fibonacci" time="0.192070185" assertions="6">
+<testsuite name="FibonacciControllerTest" tests="4" time="0.1541136" failures="0" errors="0" skipped="0" assertions="38" timestamp="2020-12-15T13:54:25+01:00">
+  <testcase name="test_if_400_is_thrown_for_fibonacci" time="0.145322453" assertions="6">
   </testcase>
-  <testcase name="test_if_400_is_thrown_for_inverted_fibonacci" time="0.002039017" assertions="6">
+  <testcase name="test_if_400_is_thrown_for_inverted_fibonacci" time="0.003423778" assertions="6">
   </testcase>
-  <testcase name="test_it_gives_the_correct_inverted_fibonacci" time="0.004881112" assertions="12">
+  <testcase name="test_it_gives_the_correct_inverted_fibonacci" time="0.002993732" assertions="12">
   </testcase>
-  <testcase name="test_it_gives_the_fibonacci_number" time="0.002330779" assertions="14">
+  <testcase name="test_it_gives_the_fibonacci_number" time="0.002054406" assertions="14">
   </testcase>
-  <system-err>
-Rails backports are deprecated.
-  </system-err>
 </testsuite>

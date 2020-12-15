@@ -12,7 +12,7 @@ class FibonacciModelTest < Test::Unit::TestCase
 
   def app
     # retrieve class name containing Sinatra app
-    Rack::Builder.parse_file("config.ru").first
+    Rack::Builder.parse_file('config.ru').first
   end
 
   def test_it_gives_the_correct_inverted_fibonacci_number

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="HugeIntegerTest" tests="3" time="0.000452801" failures="0" errors="0" skipped="0" assertions="4" timestamp="2020-12-15T13:54:25+01:00">
+  <testcase name="test_addition" time="0.000143943" assertions="1">
+  </testcase>
+  <testcase name="test_it_creates_huge_number_from_integer" time="5.4786e-05" assertions="2">
+  </testcase>
+  <testcase name="test_to_copy_2_huge_integers" time="4.2463e-05" assertions="1">
+  </testcase>
+</testsuite>
