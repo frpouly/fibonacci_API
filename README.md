@@ -22,7 +22,7 @@ Afterthat, you can access to the routes :
 curl -i localhost:3000/api/v1/fibonacci/12
 curl -i localhost:3000/api/v1/inverted_fibonacci/144
 ```
-And the small index (localhost:3000/)[localhost:3000]
+And the small index : [localhost:3000/](localhost:3000)
 
 ### Using Docker
 
