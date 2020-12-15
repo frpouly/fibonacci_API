@@ -68,6 +68,12 @@ I also wanted to create the user web interface for the API.
 
 Finally, I fixed the Docker image, even though I created my Dockerfile and my docker-compose.yaml almost at the beginning, it needed an upgrade -mainly because it didn't work-.
 
+## Tuesday
+
+I updated the index page, the div to show the results is now scrollable.
+
+Yesterday I also implemented auto deploiement within Heroku, so that when the main branch is changed it pulls the changes and reloads. It was a nice way to see if it works and it does.
+
 # To sum up
 
 I chose a MVC architecture. The controller intercepts the requests and send them to the view (for `/`) or to FibonacciModel or InvertedFibonacciModel.
