@@ -3,6 +3,15 @@
   <head>
     <title>Fibonaci API</title>
   </head>
+  <style>
+    .result {
+        display: block;
+        max-height: 200px;
+        overflow-y: scroll;
+        word-break: break-all;
+        border: 1px solid;
+    }
+  </style>
   <body>
     <h1>Fibonacci API</h1>
     <br>
@@ -13,7 +22,7 @@
     </form>
 
     <h1> Result :</h1>
-    <span id="result_fibonacci">Make a request</span>
+    <span id="result_fibonacci" class="result">Make a request</span>
     <br>
     <br>
     <br>
@@ -24,7 +33,7 @@
     </form>
 
     <h1> Result :</h1>
-    <span id="result_inverted_fibonacci">Make a request</span>
+    <span id="result_inverted_fibonacci" class="result">Make a request</span>
 
   </body>
   <script src="/js/index.js"></script>
