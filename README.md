@@ -36,6 +36,11 @@ curl -i localhost:3000/api/v1/fibonacci/12
 curl -i localhost:3000/api/v1/inverted_fibonacci/144
 ```
 
+### Heroku
+
+I deployed the API on Heroku, it available at the address : [https://fibo-api.herokuapp.com/](https://fibo-api.herokuapp.com/)
+
+
 ## Tests
 
 I also implemented basic unit tests, you can run them with
