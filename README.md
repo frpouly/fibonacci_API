@@ -1,5 +1,11 @@
 # fibonacci_API
 
+## Routes :
+
+* `/` : a tiny webpage where you will be able to interrogate the API
+* `/api/v1/fibonacci/number` : returns the result of Fibonacci(number)
+* `/api/v1/inverted_fibonacci/number` : returns an integer n so that n = Fibonacci(number) number is in the Fibonacci sequence
+
 ## Running the service :
 
 ### Locally with Rack
@@ -13,12 +19,22 @@ rackup -p 3000 &
 
 Afterthat, you can access to the routes :
 ``` bash
-curl -i localhost:3000/api/v1/fibonacci/${number}
+curl -i localhost:3000/api/v1/fibonacci/12
+curl -i localhost:3000/api/v1/inverted_fibonacci/144
 ```
+And the small index [localhost:3000/](localhost:3000)
 
 ### Using Docker
 
-To be implemented
+```bash
+docker-compose up -d
+```
+
+And then you should be able to access to the site :
+``` bash
+curl -i localhost:3000/api/v1/fibonacci/12
+curl -i localhost:3000/api/v1/inverted_fibonacci/144
+```
 
 ## Tests
 

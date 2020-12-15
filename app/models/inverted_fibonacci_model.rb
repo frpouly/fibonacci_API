@@ -1,5 +1,4 @@
 class InvertedFibonacciModel
-  @num
   attr :result
   @@PHI = 1.618033988749895
 

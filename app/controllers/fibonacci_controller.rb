@@ -1,10 +1,8 @@
 require 'sinatra'
-require "sinatra/multi_route"
 require_relative '../models/fibonacci_model'
 require_relative '../models/inverted_fibonacci_model'
 
 class FibonacciController < Sinatra::Base
-  register Sinatra::MultiRoute
 
   configure do
     set :views, "app/views"
