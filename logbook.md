@@ -60,3 +60,26 @@ This new method works very well, now I can compute Fibonacci numbers up to 15 mi
 
 Finally, I added the tests for the inverted Fibonacci method. Added the tests was useful as I didn't that if I had 0 as input, a division by 0 was made.
 
+## Monday
+
+I added tests for my models, even though my test coverage might be high, I still need to work on those, I think they don't cover everything.
+
+I also wanted to create the user web interface for the API.
+
+Finally, I fixed the Docker image, even though I created my Dockerfile and my docker-compose.yaml almost at the beginning, it needed an upgrade -mainly because it didn't work-.
+
+# To sum up
+
+I chose a MVC architecture. The controller intercepts the requests and send them to the view (for `/`) or to FibonacciModel or InvertedFibonacciModel.
+
+The algorithm I found to compute a Fibonacci number is very fast, it is recursive but it doesn't need the whole sequence to compute a Fibonacci number.
+
+The index page is not really user-friendly, there is no CSS at the moment and large numbers stick out the page.
+
+At the beginning, I created a small CI pipeline, however my Jenkins server was on Docker on my computer, so I couldn't use the GitHub webhooks to trigger automatic builds. That is something I would have liked to improve.
+
+I made some tests, but I might have not tested all the cases. They were very useful during the development to rapidly test if some changes didn't break everything.
+
+
+
+

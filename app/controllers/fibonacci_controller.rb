@@ -1,14 +1,20 @@
 require 'sinatra'
-require "sinatra/multi_route"
 require_relative '../models/fibonacci_model'
 require_relative '../models/inverted_fibonacci_model'
 
 class FibonacciController < Sinatra::Base
-  register Sinatra::MultiRoute
 
-  @@default_route = "/api/v1/"
+  configure do
+    set :views, "app/views"
+    set :public_folder, 'public'
+    @default_route = "/api/v1/"
+  end
 
-  get @@default_route + "fibonacci/:number" do
+  get '/' do
+    erb :index
+  end
+
+  get @default_route + "fibonacci/:number" do
     begin
       number = Integer(params[:number])
     rescue
@@ -24,7 +30,7 @@ class FibonacciController < Sinatra::Base
     { "value" => FibonacciModel.new(number).result.to_s }.to_json
   end
 
-  get @@default_route + "inverted_fibonacci/:number" do
+  get @default_route + "inverted_fibonacci/:number" do
     begin
       number = Integer(params[:number])
     rescue
@@ -35,5 +41,10 @@ class FibonacciController < Sinatra::Base
     end
     content_type 'application/json'
     { "value" => InvertedFibonacciModel.new(number).result.to_s }.to_json
+  end
+
+  error Sinatra::NotFound do
+    content_type 'text/plain'
+    [404, 'Not Found']
   end
 end
