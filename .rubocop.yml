@@ -1,0 +1,9 @@
+Style/FrozenStringLiteralComment:
+  Enabled: true
+
+Style/ClassVars:
+  Enabled: false
+
+AllCops:
+  Exclude:
+    - 'test/**/**'
