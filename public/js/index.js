@@ -2,8 +2,6 @@ window.addEventListener("load", function () {
     function sendData(end_path) {
         let XHR = new XMLHttpRequest();
 
-        let FD = new FormData(form);
-
         XHR.addEventListener("error", function(event) {
             alert('Oups! Somethong went wrong.');
         });
@@ -30,7 +28,7 @@ window.addEventListener("load", function () {
 
     let form_inverted_fibonacci = document.getElementById("inverted_fibonacci")
 
-    form_fibonacci.addEventListener("submit", function (event) {
+    form_inverted_fibonacci.addEventListener("submit", function (event) {
         event.preventDefault();
         sendData("inverted_fibonacci");
     });
